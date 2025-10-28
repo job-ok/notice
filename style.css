@@ -1,0 +1,21 @@
+/* 기본 폰트와 배경색 설정 */
+body {
+    font-family: 'Malgun Gothic', 'Dotum', sans-serif; /* 윈도우 기본 한글 폰트 설정 */
+    line-height: 1.6;
+}
+
+/* 네비게이션바의 텍스트 색상을 어둡게 조정 */
+.navbar-light .navbar-nav .nav-link {
+    color: #333;
+}
+
+/* 메인 섹션(HERO) 배경색 및 폰트색 설정 */
+#hero {
+    /* Bootstrap의 기본 primary 색상을 사용하고, 필요하다면 여기에 배경색을 지정할 수 있습니다. */
+    background-color: #007bff !important; /* 고용센터 이미지에 맞게 파란색 계열로 설정 */
+}
+
+/* 섹션 간 구분을 위한 패딩 */
+section {
+    padding: 60px 0; /* 위아래 여백을 넉넉하게 줍니다. */
+}
