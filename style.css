@@ -26,3 +26,10 @@ section {
     transform: translateY(-5px); /* 살짝 위로 띄우는 효과 */
     box-shadow: 0 1rem 3rem rgba(0,0,0,.175) !important; /* 그림자를 더 진하게 */
 }
+
+/* 3단계 솔루션 섹션에 들어가는 이미지 아이콘 크기 통일 */
+.solution-icon {
+    width: 80px;  /* 이미지 너비를 80px로 통일 */
+    height: 80px; /* 이미지 높이를 80px로 통일 */
+    object-fit: contain; /* 이미지가 잘리지 않고 프레임 안에 맞게 표시되도록 설정 */
+}
