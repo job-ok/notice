@@ -19,3 +19,10 @@ body {
 section {
     padding: 60px 0; /* 위아래 여백을 넉넉하게 줍니다. */
 }
+
+/* 3단계 솔루션 카드에 마우스를 올렸을 때 그림자 효과 */
+#solution .card:hover {
+    transition: all 0.3s ease-in-out;
+    transform: translateY(-5px); /* 살짝 위로 띄우는 효과 */
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175) !important; /* 그림자를 더 진하게 */
+}
