@@ -33,3 +33,14 @@ section {
     height: 100px; /* 이미지 높이를 80px로 통일 */
     object-fit: contain; /* 이미지가 잘리지 않고 프레임 안에 맞게 표시되도록 설정 */
 }
+
+/* 신청 박스 내 모든 텍스트의 줄 간격 강제 조정 */
+.apply-box-content h4,
+.apply-box-content p {
+    line-height: 1.2 !important; /* 기본값(1.6)보다 훨씬 작은 1.2로 설정 */
+    margin-bottom: 0.5rem !important; /* 마진(여백)도 약간 줄입니다 */
+}
+/* 버튼 위쪽의 여백도 조정 */
+.apply-box-content .mt-3 {
+    margin-top: 0.8rem !important; /* 기존 1rem에서 0.8rem으로 약간 줄입니다 */
+}
