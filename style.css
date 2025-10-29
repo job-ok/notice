@@ -44,3 +44,30 @@ section {
 .apply-box-content .mt-3 {
     margin-top: 0.8rem !important; /* 기존 1rem에서 0.8rem으로 약간 줄입니다 */
 }
+
+/* style.css 에 반드시 추가해야 할 내용 */
+
+:root {
+    /* 새로운 메인 색상 정의 */
+    --main-color: #003366; /* 신뢰감 있는 짙은 남색 */
+    --secondary-bg: #f8f9fa; /* 배경색 (라이트 그레이) */
+    --accent-color: #ffc107; /* 강조색 (노란색) */
+}
+
+/* 3단계 솔루션 섹션에 들어가는 이미지 아이콘 크기 통일 */
+.solution-icon {
+    width: 80px;  /* 이미지 너비를 80px로 통일 */
+    height: 80px; /* 이미지 높이를 80px로 통일 */
+    object-fit: contain; 
+}
+
+/* 신청 박스 내 모든 텍스트의 줄 간격 강제 조정 (박스 높이 줄이기 위함) */
+.apply-box-content h4,
+.apply-box-content p {
+    line-height: 1.2 !important; 
+    margin-bottom: 0.5rem !important;
+}
+/* 버튼 위쪽의 여백도 조정 */
+.apply-box-content .mt-3 {
+    margin-top: 0.8rem !important; 
+}
