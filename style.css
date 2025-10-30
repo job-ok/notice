@@ -56,7 +56,7 @@ section {
     word-break: keep-all; 
 }
 
-/* 솔루션 아이콘 스타일 (새로 추가된 CSS) */
+/* 🚩 솔루션 아이콘 컨테이너 스타일 (디자인 적용 핵심) */
 .solution-icon-container {
     width: 64px;
     height: 64px;
@@ -71,6 +71,7 @@ section {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
 }
+/* 🚩 솔루션 카드 호버 효과 (디자인 적용 핵심) */
 .solution-card:hover .solution-icon-container {
     background-color: var(--main-color);
     color: white;
