@@ -203,6 +203,16 @@ section {
     object-fit: cover;*/
 }
 
+/* 🚩 [추가된 CSS] 솔루션 스텝 카드 디자인 및 호버 효과 */
+.solution-step-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+    border: 1px solid #dee2e6; /* 기본 테두리 */
+}
+.solution-step-card:hover {
+    transform: translateY(-8px); /* 마우스 오버 시 살짝 위로 이동 */
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important; /* 그림자 강조 */
+    border: 1px solid var(--main-color); /* 메인 색상으로 테두리 강조 */
+}
 
 /* 🚩 솔루션 아이콘 컨테이너 스타일 (디자인 적용 핵심) */
 /*
