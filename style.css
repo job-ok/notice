@@ -182,8 +182,12 @@ section {
 .card-img-top {
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
-    height: 200px;
-    object-fit: cover;
+    /* 🚩 [수정 대상]: 고정 높이 200px을 'auto'로 변경하여 원래 비율대로 표시되도록 합니다. */
+    height: auto; 
+    /* 🚩 [수정 대상]: 'cover' 대신 'contain'을 사용하거나 아예 삭제하여 이미지가 잘리는 것을 방지합니다. */
+    object-fit: contain; 
+    /*height: 200px;
+    object-fit: cover;*/
 }
 
 
