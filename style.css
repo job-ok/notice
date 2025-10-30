@@ -148,6 +148,12 @@ section {
     color: white;
 }
 
+/* Collapse 애니메이션 */
+.collapse.show {
+    /* Bootstrap 기본 설정 사용 */
+}
+
+
 /* 🚩 솔루션 아이콘 컨테이너 스타일 (디자인 적용 핵심) */
 /*
 .solution-icon-container {
