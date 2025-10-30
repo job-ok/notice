@@ -52,3 +52,6 @@ section {
     margin-top: 0.8rem !important; /* 기존 1rem에서 0.8rem으로 약간 줄입니다 */
 }
 
+.title-break-fix {
+    word-break: keep-all; 
+}
