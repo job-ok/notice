@@ -50,26 +50,57 @@
         </div>
     </section>
 -->
+<!-- 좌측 4컷 만화 추가 전 최종확인    
     <section id="hero" class="py-5 text-center text-white" style="background-color: var(--main-color);">
         <div class="container">
-            <!-- 🚩 [수정된 부분] 텍스트와 GIF를 가로로 나누기 위해 row/col 구조 추가 -->
+            
             <div class="row align-items-center">
                 
-                <!-- 왼쪽 컬럼 (텍스트와 버튼) display-3을 display-5로 수정하여 글자 작게 변경함 -->
+                
                 <div class="col-lg-6 text-center text-lg-start"> 
                     <h1 class="display-6 fw-bold">취업 절벽, 혼자 헤매지 마세요.</h1>
                     <p class="lead mt-3">절망 끝에서 만나는 인생의 전환점, 구직자 도약보장 패키지가 함께 합니다.</p>
                     
-                    <!-- 🚩 [핵심 수정 부분] 버튼을 모든 화면에서 중앙 정렬하도록 justify-content-lg-start 제거 -->
+                    
                     <div class="d-flex justify-content-center">
                         <a href="#apply" class="btn btn-warning btn-lg mt-4">나의 도약 시작하기</a>
                     </div>
                 </div>
                 
-                <!-- 오른쪽 컬럼 (GIF 이미지) -->
                 <div class="col-lg-6 mt-4 mt-lg-0"> 
                     <img src="hero_animation.gif" alt="구직자 도약보장 패키지 카드뉴스" class="hero-gif rounded-lg shadow-lg">
                 </div>
+            </div>
+            
+        </div>
+    </section>
+-->
+
+        <!-- HERO 섹션 (3컬럼 구조로 변경: 이미지 | 텍스트 | GIF) -->
+    <section id="hero" class="py-5 text-center text-white" style="background-color: var(--main-color);">
+        <div class="container">
+            <!-- 🚩 [핵심 수정] 3컬럼 구조 (col-lg-4)로 변경하고 순서(order) 조정 -->
+            <div class="row align-items-center justify-content-center">
+                
+                <!-- 1. 왼쪽 컬럼: 추가 이미지 (order-2: 모바일에서 텍스트 다음, order-lg-1: 데스크탑에서 1번째) -->
+                <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0 order-2 order-lg-1">
+                    <img src="additional_hero_image.png" alt="고용센터 로고 또는 추가 안내" class="hero-col-image">
+                </div>
+
+                <!-- 2. 가운데 컬럼: 텍스트와 버튼 (order-1: 모바일에서 가장 먼저, order-lg-2: 데스크탑에서 2번째) -->
+                <div class="col-12 col-lg-4 text-center mb-4 mb-lg-0 order-1 order-lg-2"> 
+                    <h1 class="display-6 fw-bold">취업 절벽, 혼자 헤매지 마세요.</h1>
+                    <p class="lead mt-3">절망 끝에서 만나는 인생의 전환점, 구직자 도약보장 패키지가 함께 합니다.</p>
+                    <div class="d-flex justify-content-center">
+                        <a href="#apply" class="btn btn-warning btn-lg mt-4 shadow-lg fw-bold">나의 도약 시작하기 <i class="fas fa-arrow-right ms-2"></i></a>
+                    </div>
+                </div>
+                
+                <!-- 3. 오른쪽 컬럼: GIF 파일 (order-3: 모바일에서 가장 마지막, order-lg-3: 데스크탑에서 3번째) -->
+                <div class="col-12 col-md-6 col-lg-4 mt-4 mt-lg-0 order-3 order-lg-3">
+                    <img src="hero_animation.gif" alt="구직자 도약보장 패키지 카드뉴스" class="hero-col-image">
+                </div>
+                
             </div>
             <!-- 🚩 [수정된 부분 끝] -->
         </div>
