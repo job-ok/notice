@@ -101,6 +101,15 @@ section {
     white-space: normal;
     font-size: 1.15rem;
     line-height: 1.4;
+    /* 🚩 [수정 추가] 카드 제목도 단어별 줄바꿈을 적용합니다. */
+    word-break: keep-all; 
+}
+
+/* 🚩 [추가] 성공 스토리 섹션의 본문 텍스트 단어별 줄바꿈 설정 */
+#success .lead,
+#success .card-text {
+    /* 한글 단어가 깨지지 않고 온전한 단어 단위로 줄바꿈 되도록 설정 */
+    word-break: keep-all;
 }
 
 /* 신청 박스 스타일링 (옵션) */
