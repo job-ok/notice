@@ -56,6 +56,27 @@ section {
     word-break: keep-all; 
 }
 
+/* 🚩 추가: 내비게이션 링크 디자인 개선 */
+.nav-link-enhanced {
+    /* 폰트 굵기를 살짝 굵게 */
+    font-weight: 600; 
+    /* 아이콘과 텍스트의 색상을 메인 색상 계열로 통일 */
+    color: var(--main-color) !important;
+    /* 부드러운 효과를 위한 트랜지션 추가 (색상과 하단 선 변화에 적용) */
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    /* 버튼처럼 보이지 않도록 좌우 패딩을 살짝 줄임 */
+    padding: 0.5rem 1rem !important; 
+    /* 기본 하단 선 제거 (hover 시 나타날 선의 초기 상태) */
+    border-bottom: 3px solid transparent;
+}
+
+.nav-link-enhanced:hover {
+    /* hover 시 텍스트 색상을 강조색(노란색)으로 변경 */
+    color: var(--accent-color) !important; 
+    /* hover 시 하단에 강조선 추가 (색상과 굵기 통일) */
+    border-bottom: 3px solid var(--accent-color);
+}
+
 /* 🚩 솔루션 아이콘 컨테이너 스타일 (디자인 적용 핵심) */
 /*
 .solution-icon-container {
