@@ -55,3 +55,19 @@ section {
 .title-break-fix {
     word-break: keep-all; 
 }
+
+/* 솔루션 아이콘 스타일 (새로 추가된 CSS) */
+.solution-icon-container {
+    width: 64px;
+    height: 64px;
+    background-color: white;
+    border: 3px solid var(--main-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--main-color);
+    font-size: 1.8rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
