@@ -96,6 +96,11 @@ section {
     word-break: keep-all; 
 }
 
+/* 🚩 [핵심 수정 3] 히어로 섹션 리드 문구 (p.lead)의 단어별 줄바꿈 설정 추가 */
+#hero .lead {
+    word-break: keep-all;
+}
+
 /* 카드 제목의 줄바꿈 방지 및 폰트 크기 조정 */
 .title-break-fix {
     white-space: normal;
