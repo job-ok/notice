@@ -206,8 +206,11 @@ section {
 /* 🚩 [추가된 CSS] 솔루션 스텝 카드 디자인 및 호버 효과 */
 .solution-step-card {
     transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
-    border: 1px solid #dee2e6; /* 기본 테두리 */
-    word-break: keep-all; 
+    border: 1px solid #dee2e6; /* 기본 테두리 */    
+}
+/* 🚩 [추가된 CSS] 카드 내부 설명 텍스트의 한글 단어 잘림 방지 */
+.solution-step-card p {
+    word-break: keep-all; /* 한/중/일 텍스트에서 단어 기준으로 줄바꿈 (단어 중간에 잘리는 것 방지) */
 }
 .solution-step-card:hover {
     transform: translateY(-8px); /* 마우스 오버 시 살짝 위로 이동 */
