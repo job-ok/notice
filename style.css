@@ -77,3 +77,7 @@ section {
     transform: scale(1.05);
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
 }
+/* 폰트 크기 조정 (Tailwind를 보조) */
+.text-x-small {
+    font-size: 0.75rem;
+}
