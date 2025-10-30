@@ -100,6 +100,19 @@ section {
     margin-right: auto;
 }
 
+/* 🚩 [수정된 CSS] 히어로 섹션 단일 컬럼 이미지 스타일 */
+.hero-col-image {
+    max-width: 100%; /* 부모 컬럼을 넘지 않음 */
+    height: auto;
+    max-height: 300px; /* 🚩 [핵심 수정] 최대 높이를 명시적으로 지정하여 크기 제어 */
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    /* 중앙 정렬을 위한 설정 */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* 🚩 [핵심 수정 2] 히어로 섹션 제목 (h1)의 단어별 줄바꿈 설정 */
 #hero .fw-bold {
     /* 한글 단어가 깨지지 않고 온전한 단어 단위로 줄바꿈 되도록 설정 */
