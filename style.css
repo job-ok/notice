@@ -104,7 +104,7 @@ section {
 .hero-col-image {
     max-width: 100%; /* 부모 컬럼을 넘지 않음 */
     height: auto;
-    max-height: 300px; /* 🚩 [핵심 수정] 최대 높이를 명시적으로 지정하여 크기 제어 */
+    max-height: 450px; /* 🚩 [핵심 수정] 최대 높이를 명시적으로 지정하여 크기 제어 */
     border-radius: 0.5rem;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     /* 중앙 정렬을 위한 설정 */
