@@ -597,7 +597,18 @@
                         <li><i class="fas fa-check-circle me-2 text-warning"></i> 실업급여 수급 중인 재취업 구직자</li>
                     </ul>
                 </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="p-3 bg-white text-dark rounded shadow-lg apply-box-content mx-auto" style="max-width: 350px;">
+                        <h4 class="fw-bolder mb-3 text-success fs-5 lh-sm">고용센터 방문 또는 전화&nbsp;상담</h4>
+                        <p class="mb-1 lh-sm">전국 고용센터 문의: <span class="fw-bolder fs-3 text-success">☎️ 1350</span></p>
+                        <a href="https://www.work24.go.kr/" target="_blank" class="btn btn-primary btn-sm mt-3">고용24 바로가기</a>
+                    </div>
+                </div>
                 -->
+            <!-- Flexbox를 이용해 컬럼 높이 맞추기 (d-flex, align-items-stretch는 이미 row에 적용되어 있습니다) -->
+            <div class="row justify-content-center d-flex align-items-stretch">
+
+                <!-- 좌측 박스 (신청 대상) - h-full로 높이 확보 -->
                 <div class="col-lg-5 mb-6 md:mb-0">
                     <div class="bg-white bg-opacity-10 p-4 rounded-lg shadow-md h-full d-flex flex-column justify-content-center">
                         <h5 class="fw-bold mb-3 text-xl text-yellow-300">누가 신청할 수 있나요?</h5>
@@ -608,15 +619,21 @@
                             <li class="mb-2"><i class="fas fa-check-circle me-2 text-warning"></i> 실업급여 수급 중인 재취업 구직자</li>
                         </ul>
                     </div>
-                </div>                
-            
-                <div class="col-lg-4 mb-4">
-                    <div class="p-3 bg-white text-dark rounded shadow-lg apply-box-content mx-auto" style="max-width: 350px;">
+                </div>
+
+                <!-- 우측 박스 (문의 안내) - h-full로 높이 확보 및 max-width 제거 -->
+                <div class="col-lg-5">
+                    <!-- 🚩 수정: max-width 스타일 제거. h-full을 사용하여 좌측 박스의 높이에 맞게 늘어납니다. -->
+                    <div class="p-4 bg-white text-dark rounded-lg shadow-2xl mx-auto h-full d-flex flex-column justify-content-center">
                         <h4 class="fw-bolder mb-3 text-success fs-5 lh-sm">고용센터 방문 또는 전화&nbsp;상담</h4>
-                        <p class="mb-1 lh-sm">전국 고용센터 문의: <span class="fw-bolder fs-3 text-success">☎️ 1350</span></p>
-                        <a href="https://www.work24.go.kr/" target="_blank" class="btn btn-primary btn-sm mt-3">고용24 바로가기</a>
+                        <p class="mb-1 lh-sm">전국 고용센터 문의:</p>
+                        <!-- 전화번호를 강조하여 높이 확보에 도움 -->
+                        <p class="mb-3"><span class="fw-bolder fs-1 text-success">☎️ 1350</span></p>
+                        <a href="https://www.work24.go.kr/" target="_blank" class="btn btn-primary btn-sm mt-3 w-full" style="background-color: var(--main-color); border-color: var(--main-color);">고용24 바로가기</a>
                     </div>
                 </div>
+
+            </div>
             
             </div>
             
