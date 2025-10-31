@@ -578,17 +578,21 @@
                 </div>
             </div>
 
-            <!-- ⭐ [수정됨] 버튼 HTML: 주석 제거 및 CSS 추가로 안정화 -->
-            <button class="btn btn-primary btn-lg mt-12 shadow-md hover:bg-blue-800 transition duration-300" 
-                    style="background-color: var(--secondary-color); border-color: var(--secondary-color);"
+            <!-- ✅ 버튼 수정 부분 -->
+            <!-- 1. text-center 클래스로 감싸 중앙 정렬 -->
+            <!-- 2. mt-12 (비표준 Bootstrap) 대신 mt-5 (표준 Bootstrap) 사용 -->
+            <!-- 3. 불확실한 var(--secondary-color) 스타일 제거 (btn-primary의 기본색 사용) -->
+            <div class="text-center mt-5">
+                <button class="btn btn-primary btn-lg shadow-md hover:bg-blue-800 transition duration-300" 
                     type="button" 
                     data-bs-toggle="collapse"
                     data-bs-target="#moreSolutions"
                     aria-expanded="false" 
                     aria-controls="moreSolutions"
                     id="toggleSolutionButton">
-                <i class="fa-solid fa-magnifying-glass-plus mr-2"></i> 솔루션 세부 이미지/자료 보기
-            </button>
+                    <i class="fa-solid fa-magnifying-glass-plus me-2"></i> 솔루션 세부 이미지/자료 보기
+                </button>
+            </div>
             
             <!-- text-secondary/회색 계열, mt-4: 상단 마진 -->
             <p class="text-center mt-4 fw-bold text-secondary korean-keep-all">데이터 기반의 전문 진단부터 취업까지, 고용센터가 끝까지 함께 합니다.</p>
