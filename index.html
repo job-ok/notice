@@ -853,6 +853,38 @@
             }
         });
     </script>
+<!-- 24.11.01 12:57 솔루션 자료 보기/숨기기 -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const solutionCollapseElement = document.getElementById('moreSolutions');
+            const solutionToggleButton = document.getElementById('toggleSolutionButton');
+            
+            if (solutionCollapseElement && solutionToggleButton) {
+                
+                // shown 이벤트 (내용이 보일 때)
+                solutionCollapseElement.addEventListener('shown.bs.collapse', () => {
+                    // 버튼 텍스트를 '숨기기'로 변경 (접기 기능)
+                    solutionToggleButton.innerHTML = '<i class="fa-solid fa-magnifying-glass-minus me-2"></i> 취업특공대 솔루션 자료 접기';
+                    
+                    // 펼쳐진 영역으로 스크롤 이동
+                    const solutionSection = document.getElementById('solution-steps');
+                    if (solutionSection) {
+                        solutionSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                });
+
+                // hidden 이벤트 (내용이 숨겨질 때)
+                solutionCollapseElement.addEventListener('hidden.bs.collapse', () => {
+                    // 버튼 텍스트를 '보기'로 복원
+                    solutionToggleButton.innerHTML = '<i class="fa-solid fa-magnifying-glass-plus me-2"></i> 취업특공대 솔루션 자료 보기';
+                    
+                    // 버튼 위치로 스크롤 이동
+                    solutionToggleButton.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                });
+            }
+        });
+    </script>
+    
 </body>
 </html>
 
